@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Menu from "./MenuComponent";
 import Home from "./HomeComponent";
+import Contact from "./ContactComponent";
 import { View, Platform } from "react-native";
 import Dishdetail from "./DishDetailComponent";
 import { createStackNavigator, createDrawerNavigator } from "react-navigation";
@@ -57,6 +58,13 @@ const MainNavigator = createDrawerNavigator(
         drawerLabel: "Menu",
       },
     },
+    Contact: {
+      screen: Contact,
+      navigationOptions: {
+        title: "Contact",
+        drawerLabel: "Contact",
+      }
+    }
   },
   { drawerBackgroundColor: "#D1C4E9" }
 );
